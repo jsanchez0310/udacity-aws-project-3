@@ -1,0 +1,4 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+Most of the vulnerabilities are due to not having incoming rules that reject connections through specific ports. My recommendation would be work on inbound rules to reject all connections to ports and all protocols that are not specified

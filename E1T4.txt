@@ -1,0 +1,7 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+One of the security problems seen is that the instance allows direct access from the internet, this because it is in a public subnet, a private subnet should be found from which only the load balancer can access it.
+
+# Poor practice 2
+Another is that the stolen credentials api has full access to s3, this because with the stolen key of the free recipes bucket you can access the secret recipes, should have 2 credentials implemented with least privilegies
