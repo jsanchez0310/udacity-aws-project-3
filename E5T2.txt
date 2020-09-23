@@ -1,13 +1,22 @@
 # Identify tools that will allow you to do the following:
 
 ## Scan infrastructure as code templates
-
+-Aquasec
 ### Example vulnerability
+-Network exposures: 
+    Insecure IaC practices could breed the ground for online attacks. 
+    The examples of some IaC misconfigurations are public accessible SSH, cloud storage services, 
+    internet-accessible databases, configuring some open-security groups, and more.
 
 ##Scan AMI’s or containers for OS vulnerabilities
-
+-Anchore Engine
 ### Example vulnerability
+-SECRETS & PASSWORDS
+    Ensure all secrets are not present in your image including passwords, 
+    API keys, and any other sensitive information
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
-
+-Alient Vault
 ### Example vulnerability
+-Malware Insertion
+ Alient Vault detect malicious actors trying to insert malware in your builds or stealing your intellectual property.

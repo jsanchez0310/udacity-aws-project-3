@@ -1,3 +1,7 @@
 # Describe GuardDuty findings that were detected related to the brute force attack
+finding type detected was 'UnauthorizedAccess:EC2/SSHBruteForce'
 
 # Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+To detect unauthorized and unexpected activity in your AWS environment, GuardDuty analyzes and processes data from AWS CloudTrail event logs, VPC Flow Logs, and DNS logs to detect anomalies involving 
+the following AWS resource types: IAM Access Keys, EC2 Instances, and S3 Buckets. 
+So then it estract fields for these logs for anomaly detection.
