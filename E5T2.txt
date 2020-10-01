@@ -3,20 +3,26 @@
 ## Scan infrastructure as code templates
 -Aquasec
 ### Example vulnerability
--Network exposures: 
-    Insecure IaC practices could breed the ground for online attacks. 
-    The examples of some IaC misconfigurations are public accessible SSH, cloud storage services, 
-    internet-accessible databases, configuring some open-security groups, and more.
+- Unauthorized Privilege Escalations
+    IaC is used to provision full-stack cloud environments that may include Kubernetes, containers, and microservices. 
+    Developers often use privileged accounts to provision cloud apps and other layers, 
+    which introduces risk of privilege escalation. If this risk is combined with hard-coded secrets 
+    and network exposures, a serious breach path is exposed to attackers.
 
 ##Scan AMI’s or containers for OS vulnerabilities
 -Anchore Engine
 ### Example vulnerability
--SECRETS & PASSWORDS
-    Ensure all secrets are not present in your image including passwords, 
-    API keys, and any other sensitive information
+- Remote code execution
+    Remote code execution, also known as RCE, is a type of vulnerability that allows attackers to remotely 
+    run arbitrary code on vulnerable servers and workstations. Attackers can then perform actions 
+    to exploit other vulnerabilities. Remote code execution is the most common vulnerability 
+    found in software today, and it can lead to other attacks, including denial-of-service 
+    and elevation of privileges.
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
 -Alient Vault
 ### Example vulnerability
--Malware Insertion
- Alient Vault detect malicious actors trying to insert malware in your builds or stealing your intellectual property.
+- Poor Access Management
+    Improper access management is perhaps the most common cloud computing security risk. 
+    In breaches involving web applications, stolen or lost credentials have been the most widely used tool 
+    by attackers for several years.
